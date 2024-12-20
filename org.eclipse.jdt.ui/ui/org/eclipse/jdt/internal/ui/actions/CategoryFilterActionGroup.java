@@ -13,6 +13,7 @@
  *******************************************************************************/
 package org.eclipse.jdt.internal.ui.actions;
 
+import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,8 +22,6 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import java.text.Collator;
 
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.graphics.Image;
@@ -186,7 +185,7 @@ public class CategoryFilterActionGroup extends ActionGroup {
 			setDescription(ActionMessages.CategoryFilterActionGroup_ShowCategoriesActionDescription);
 			setToolTipText(ActionMessages.CategoryFilterActionGroup_ShowCategoriesToolTip);
 			setText(ActionMessages.CategoryFilterActionGroup_ShowCategoriesLabel);
-			JavaPluginImages.setLocalImageDescriptors(this, "category_menu.png"); //$NON-NLS-1$
+			JavaPluginImages.setLocalImageDescriptors(this, "category_menu.svg"); //$NON-NLS-1$
 		}
 
 		@Override
