@@ -127,7 +127,7 @@ public class ImagesOnFileSystemRegistry {
 	private File getNewFile() {
 		File file;
 		do {
-			file= new File(fTempDir, String.valueOf(getImageCount()) + ".png"); //$NON-NLS-1$
+			file= new File(fTempDir, String.valueOf(getImageCount()) + ".svg"); //$NON-NLS-1$
 		} while (file.exists());
 		return file;
 	}
